@@ -1,0 +1,70 @@
+.garage {
+  width: 100%;
+}
+
+.header {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+.control-input, 
+.control-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 5px;
+}
+
+.control-buttons {
+  flex-wrap: wrap;
+}
+
+.text-input {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding: 2px 5px;
+  outline: none;
+  border: none;
+}
+
+.color-input {
+  border-radius: 5px;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.garage__title {
+  padding: 0 0 5px 0;
+}
+
+.garage__page-number {
+  font-size: 20px;
+}
+
+.winner-massage {
+  margin: 0;
+  padding: 15px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: 800;
+  visibility: hidden;
+  color: rgb(219, 11, 11);
+  text-shadow: 5px 5px 10px rgb(219, 11, 11);
+  filter: brightness(150%);
+}
+
+.winner-massage_visible {
+  visibility: visible;
+}

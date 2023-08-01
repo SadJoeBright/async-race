@@ -1,0 +1,104 @@
+.garage-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2px 15px;
+}
+
+.car-control {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 35%;
+  gap: 2%;
+  margin: 0;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 35px; 
+  border-bottom: solid 3px rgb(94, 94, 94);
+  margin-top: -30px;
+}
+
+.engine-control {
+  display: flex;
+  gap: 5px;
+}
+
+.button_start,
+.button_stop {
+  background-color: rgb(38, 208, 38);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 8px;
+  text-align: center;
+  line-height: 350%;
+  position: relative;
+  z-index: 10;
+  user-select: none;
+  transition: all ease-in-out .2s;
+}
+
+.button_start:hover,
+.button_stop:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
+.button_start:active,
+.button_stop:active {
+  transform: scale(0.95);
+}
+
+.button_stop {
+  background-color: red;
+}
+
+.car {
+  position: relative;
+  left: 90px;
+}
+
+@keyframes moove {
+  from {
+    left: 90px;
+  }
+  to {
+  left: calc(100% - 100px);
+  }
+}
+
+.selected {
+  color: rgb(250, 215, 75);
+  text-shadow: rgb(250, 215, 75) 0 0 10px;
+  filter: brightness(150%);
+}
+
+.finish {
+  left: calc(100% - 100px);
+}
+
+.moove{
+  animation-name: moove;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-play-state: running;
+}
+
+.stop {
+  animation-play-state: paused;
+}
+
+.flag {
+  background-image: url("../../assets/images/flag.png");
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+  padding-right: calc(2% + 100px);
+}

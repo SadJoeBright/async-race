@@ -1,0 +1,57 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.chart__line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.chart__header {
+  background: rgb(91, 176, 255);  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.chart__body {
+  width: 100%;
+  background: rgb(94, 94, 94);
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.chart__column {
+  width: 20%;
+  display: flex;
+  padding: 5px 15px;
+  display: inline-block;
+  text-align: left;
+}
+
+.chart__car {
+  width: 10px;
+  height: 5px;
+}
+
+.chart__name {
+  width: 40%;
+}
+
+.chart__number {
+  display: inline-block;
+  text-align: center;
+}
+
+.chart__wins:hover,
+.chart__time:hover{
+  cursor: pointer;
+  filter: brightness(150%);
+}
+
